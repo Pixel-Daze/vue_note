@@ -1,0 +1,89 @@
+/*  移动端1px边框
+	pixel-1px-t  上边框
+	pixel-1px-b  下边框
+	pixel-1px-l  左边框
+	pixel-1px-r  右边框
+	pixel-1px-tb 上下边框
+	pixel-1px-lr 左右边框
+ */
+
+*{
+	-webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	box-sizing: border-box;
+}
+*::before,
+*::after {
+  	-webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	box-sizing: border-box;
+}
+
+$c:#c7c7c7;
+
+
+.pixel-1px-t,.pixel-1px-b,.pixel-1px-l,.pixel-1px-r,.pixel-1px-tb,.pixel-1px-lr,.pixel-1px{
+	position: relative;
+}
+
+.pixel-1px-t::before,.pixel-1px-b::after,.pixel-1px-tb::before,.pixel-1px-tb::after{
+	content: " ";
+  	position: absolute;
+  	left: 0;
+  	right: 0;
+  	height: 1px;
+  	-webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+}
+
+.pixel-1px-l::before,.pixel-1px-r::after,.pixel-1px-lr::before,.pixel-1px-lr::after{
+	content: " ";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 1px;
+	-webkit-transform: scaleX(0.5);
+    transform: scaleX(0.5);
+}
+
+.pixel-1px-t::before,.pixel-1px-tb::before{
+	border-top: 1px solid $c;
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
+	top: 0;
+}
+
+.pixel-1px-b::after,.pixel-1px-tb::after{
+	border-bottom: 1px solid $c;
+	-webkit-transform-origin: 0 100%;
+	transform-origin: 0 100%;
+	bottom: 0;
+}
+
+.pixel-1px-l::before,.pixel-1px-lr::before{
+	border-left: 1px solid $c;
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
+	left: 0;
+}
+
+.pixel-1px-r::after,.pixel-1px-lr::after{
+	border-right: 1px solid $c;
+	-webkit-transform-origin: 100% 0;
+	transform-origin: 100% 0;
+	right: 0;
+}
+
+.pixel-1px::after{
+	content: " ";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 200%;
+	height: 200%;
+	border: 1px solid $c;
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
+	-webkit-transform: scale(.5);
+	transform: scale(.5);
+}

@@ -2,6 +2,8 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
+    <div class="icon iconfont icon-shouye1"></div>
+    <div class="px-box pixel-1px"></div>
   </div>
 </template>
 
@@ -34,5 +36,12 @@ li {
 
 a {
   color: #42b983;
+}
+
+.px-box{
+  width: 4rem;
+  height: 4rem;
+  margin: 0.266667rem auto;
+  background: rgba(249,78,78,0.5)
 }
 </style>
