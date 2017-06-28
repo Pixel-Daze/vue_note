@@ -1,6 +1,6 @@
 # lodash_test
 
-> lodash test
+> 对于lodash库的一些探索，也是对手头项目的一些总结
 
 ## Build Setup
 

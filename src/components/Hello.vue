@@ -42,6 +42,7 @@ a {
   width: 4rem;
   height: 4rem;
   margin: 0.266667rem auto;
-  background: rgba(249,78,78,0.5)
+  background: rgba(249,78,78,0.5);
+  transform: scale(1);
 }
 </style>

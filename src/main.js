@@ -12,6 +12,8 @@ import '../static/lib/icon-font/iconfont.css'
 
 /* basic style */
 import '../static/lib/css/basic.scss'
+/* 1px style */
+import '../static/lib/css/pixel-1px.scss'
 
 Vue.config.productionTip = false
 

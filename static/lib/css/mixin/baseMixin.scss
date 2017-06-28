@@ -1,0 +1,5 @@
+@mixin prefix($property,$value){
+	-webkit-#{$property}:$value;
+	-moz-#{$property}:$value;
+	#{$property}:$value;
+}

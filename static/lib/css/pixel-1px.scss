@@ -1,0 +1,55 @@
+@import './mixin/setOnepx';
+
+.pixel-1px-t,.pixel-1px-b,.pixel-1px-l,.pixel-1px-r,.pixel-1px-tb,.pixel-1px-lr,.pixel-1px{
+	position: relative;
+}
+
+.pixel-1px-t{
+	&::before{
+		@include setTopLine();
+	}
+}
+
+.pixel-1px-t{
+	&::after{
+		@include setBottomLine();
+	}
+}
+
+.pixel-1px-tb{
+	&::before{
+		@include setTopLine();
+	}
+	&::after{
+		@include setBottomLine();
+	}
+}
+
+.pixel-1px-l{
+	&::before{
+		@include setLeftLine();
+	}
+}
+
+.pixel-1px-r{
+	&::after{
+		@include setRightLine();
+	}
+}
+
+.pixel-1px-lr{
+	&::before{
+		@include setLeftLine();
+	}
+	&::after{
+		@include setRightLine();
+	}
+}
+
+.pixel-1px{
+	&::after{
+		@include setBorderLine();
+	}
+	
+}
+
