@@ -1,12 +1,11 @@
-*{
-	-webkit-box-sizing: border-box;
-  	-moz-box-sizing: border-box;
-  	box-sizing: border-box;
-}
-*::before,
-*::after {
-  	-webkit-box-sizing: border-box;
-  	-moz-box-sizing: border-box;
-  	box-sizing: border-box;
-}
+@import './base/mixin/baseMixin';
 
+*{
+	@include prefix(box-sizing,border-box)
+	&::before{
+		@include prefix(box-sizing,border-box)
+	}
+	&::after{
+		@include prefix(box-sizing,border-box)
+	}
+}
