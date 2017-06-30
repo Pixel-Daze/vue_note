@@ -1,1 +1,12 @@
 @import '../../base/fn';
+
+.pixel-grids{
+	position: relative;
+	overflow: hidden;
+	&::before{
+		@include setTopLine($pixelGridBorderColor);
+	}
+	&::after{
+		@include setLeftLine($pixelGridBorderColor);
+	}
+}

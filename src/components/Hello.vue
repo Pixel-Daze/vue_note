@@ -8,12 +8,16 @@
 </template>
 
 <script>
+import {baseUrl} from '../config/env.js'
 export default {
   name: 'hello',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  mounted(){
+    console.log(baseUrl)
   }
 }
 </script>
