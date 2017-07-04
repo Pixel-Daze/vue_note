@@ -2,8 +2,6 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
-/* dev/prod config */
-
 /* mint */
 import Mint from 'mint-ui'
 import 'mint-ui/lib/style.css'
