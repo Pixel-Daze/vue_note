@@ -10,6 +10,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "fastclick": "^1.0.6",
     "lodash": "^4.17.4",
     "mint-ui": "^2.2.7",
     "node-sass": "^4.5.3",

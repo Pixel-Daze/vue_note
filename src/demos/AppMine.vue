@@ -1,9 +1,9 @@
 <template>
-	<div class="app-index">appindex</div>
+	<div class="app-mine">appmine</div>
 </template>
 <script>
 	export default {
-		name:'AppIndex',
+		name:'AppMine',
 		methods:{
 			init(){
 				console.log(this.$route)
