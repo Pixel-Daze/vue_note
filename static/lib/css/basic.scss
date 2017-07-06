@@ -1,4 +1,5 @@
 @import './base/mixin/baseMixin';
+@import './base/variable/base-color';
 
 *{
 	@include prefix(box-sizing,border-box)
@@ -8,4 +9,8 @@
 	&::after{
 		@include prefix(box-sizing,border-box)
 	}
+}
+
+.text-primary{
+	color: $primary-color;
 }

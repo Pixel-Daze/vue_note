@@ -3,18 +3,18 @@ import Router from 'vue-router'
 import {routerMode} from '../config/env'
 Vue.use(Router)
 
-const App = resolve => require(['../App'],resolve)
+const AppBase = resolve => require(['../demos/AppBase'],resolve)
 const AppIndex = resolve => require(['../demos/AppIndex'],resolve)
 const AppMine = resolve => require(['../demos/AppMine'],resolve)
 
 const Grid = resolve => require(['../demos/Grid'],resolve)
 
 const routerMaps = [
-  {name:'App',path:'/app',component:App,children:[
-      {name:'appIndex',path:'/appindex',component:AppIndex},
-      {name:'appMine',path:'/appmine',component:AppMine}
+  {name:'AppBase',path:'/appbase',component:AppBase,children:[
+      {name:'appIndex',path:'appindex',component:AppIndex},
+      {name:'appMine',path:'appmine',component:AppMine}
   ]},
-	{path: '*', redirect: '/appindex'}
+	{path: '*', redirect: '/appbase/appindex'}
 ]
 
 const scrollBehavior = (to, from, savedPosition) => {

@@ -11,6 +11,9 @@ if('addEventListerner' in document){
 	},false)
 }
 
+/* flexible.js */
+import '../static/lib/js/flexible_css.js'
+
 /* mint */
 import Mint from 'mint-ui'
 import 'mint-ui/lib/style.css'
@@ -27,6 +30,7 @@ import '../static/lib/css/pixel-1px.scss'
 /* ExtendPlugin */
 import ExtendPlugin from './plugins/vue.ext.js'
 Vue.use(ExtendPlugin)
+
 
 Vue.config.productionTip = false
 
