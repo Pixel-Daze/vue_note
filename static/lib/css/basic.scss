@@ -1,5 +1,6 @@
 @import './base/mixin/baseMixin';
 @import './base/variable/base-color';
+@import './base/reset.css';
 
 *{
 	@include prefix(box-sizing,border-box)
@@ -11,6 +12,6 @@
 	}
 }
 
-.text-primary{
-	color: $primary-color;
+.text-red{
+	color: $text-red-color;
 }

@@ -10,7 +10,7 @@
 	}
 }
 
-.pixel-1px-t{
+.pixel-1px-b{
 	&::after{
 		@include setBottomLine();
 	}

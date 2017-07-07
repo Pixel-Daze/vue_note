@@ -1,7 +1,7 @@
 <template>
 	<div class="app-base text-primary">
 		<router-view></router-view>
-        <mt-tabbar v-model="selected" fixed class="ratain-border-top">
+        <mt-tabbar v-model="selected" fixed class="pixel-1px-t">
           	<mt-tab-item id="appIndex"  @click.native="changeTab('appIndex')">
             	<i slot="icon" class="icon iconfont icon-shouye"></i>
             	首页
@@ -26,7 +26,6 @@
 	      		this.$router.push({name:TabName})
 	    	},
 	    	init(){
-	    		console.log(this.$route.name)
 	      		this.selected = this.$route.name
 	    	}
 	  	},

@@ -1,6 +1,7 @@
 @import 'baseMixin';
+@import '../variable/base-color';
 
-$c:#000;
+$c:$border-color;
 
 @mixin setTopLine($color:$c) {
 	content: " ";
