@@ -5,11 +5,7 @@ import router from './router'
 /* fastclick */
 import FastClick from 'fastclick'
 
-if('addEventListerner' in document){
-	document.addEventListerner('DOMContentLoaded',function(){
-		FastClick.attach(document.body)
-	},false)
-}
+FastClick.attach(document.body)
 
 /* flexible.js */
 import '../static/lib/js/flexible_css.js'

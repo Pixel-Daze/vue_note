@@ -1,5 +1,8 @@
 <template>
-	<div class="app-index">appindex</div>
+	<div class="app-index">
+		<!-- <mt-header title="Home"></mt-header> -->
+		appindex
+	</div>
 </template>
 <script>
 	export default {

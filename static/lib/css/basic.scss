@@ -15,3 +15,27 @@
 .text-red{
 	color: $text-red-color;
 }
+
+/* mint fix */
+
+.app-base{
+	.mint-tabbar{
+		position: absolute;
+		bottom: 0;
+		background-color: #fff;
+		.iconfont{
+			font-size: 25px;
+		}
+		.mint-tab-item{
+			color: $text-gray-color;
+		    padding: 6px 0;
+		}
+		.mint-tab-item.is-selected{
+		    color: $text-red-color;
+		    background-color: #fff;
+		}
+		.mint-tab-item-label{
+			font-size: 14px;
+		}
+	}
+}

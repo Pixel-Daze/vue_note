@@ -9,10 +9,10 @@ const AppMine = resolve => require(['../demos/AppMine'],resolve)
 
 const Grid = resolve => require(['../demos/Grid'],resolve)
 
-const routerMaps = [
+var routerMaps = [
   {name:'AppBase',path:'/appbase',component:AppBase,children:[
-      {name:'appIndex',path:'appindex',component:AppIndex},
-      {name:'appMine',path:'appmine',component:AppMine}
+      {name:'appIndex',path:'appindex',component:AppIndex,meta: { name:'Home' }},
+      {name:'appMine',path:'appmine',component:AppMine,meta: { name:'Mine' }}
   ]},
 	{path: '*', redirect: '/appbase/appindex'}
 ]

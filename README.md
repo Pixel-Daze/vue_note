@@ -7,20 +7,14 @@
 > 解决移动端300ms点击延时
 
 ```
-/* fastclick */
 import FastClick from 'fastclick'
 
-if('addEventListerner' in document){
-	document.addEventListerner('DOMContentLoaded',function(){
-		FastClick.attach(document.body)
-	},false)
-}
+FastClick.attach(document.body)
 ```
 *flexible_css.js*
 >实现H5页面的终端适配
 
 ```
-/* flexible.js */
 import '../static/lib/js/flexible_css.js'
 ```
 
@@ -28,7 +22,6 @@ import '../static/lib/js/flexible_css.js'
 >移动端基础UI库（可自行替换如vux）
 
 ```
-/* mint */
 import Mint from 'mint-ui'
 import 'mint-ui/lib/style.css'
 Vue.use(Mint)
@@ -38,6 +31,5 @@ Vue.use(Mint)
 >字体图标库
 
 ```
-/* iconfont */
 import '../static/lib/icon-font/iconfont.css'
 ```
