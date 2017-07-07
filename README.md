@@ -2,20 +2,42 @@
 
 > 对于lodash库的一些探索，也是对手头项目的一些总结
 
-## Build Setup
+### 技术栈
+*FastClick*
+> 解决移动端300ms点击延时
 
-``` bash
-# install dependencies
-npm install
+```
+/* fastclick */
+import FastClick from 'fastclick'
 
-# serve with hot reload at localhost:8080
-npm run dev
+if('addEventListerner' in document){
+	document.addEventListerner('DOMContentLoaded',function(){
+		FastClick.attach(document.body)
+	},false)
+}
+```
+*flexible_css.js*
+>实现H5页面的终端适配
 
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
+```
+/* flexible.js */
+import '../static/lib/js/flexible_css.js'
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+*mint-ui*
+>移动端基础UI库（可自行替换如vux）
+
+```
+/* mint */
+import Mint from 'mint-ui'
+import 'mint-ui/lib/style.css'
+Vue.use(Mint)
+```
+
+*iconfont*
+>字体图标库
+
+```
+/* iconfont */
+import '../static/lib/icon-font/iconfont.css'
+```
