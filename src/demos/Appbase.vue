@@ -1,8 +1,12 @@
 <template>
 	<div class="app-base text-primary">
-
-		<mt-header :title="title"></mt-header>
-
+		<p-header 
+		:title="title" 
+		transition="pixel-header-fade-in-left"
+		:right-options="rightOptions"
+		@on-click-more="onClickMore">
+			<!-- <a slot="right">更多</a> -->
+		</p-header>
 		<transition name="pixel-pop-out">
 			<router-view></router-view>	
 		</transition>
@@ -20,15 +24,18 @@
 	</div>
 </template>
 <script>
-	import {XHeader} from '../components/XHeader'
+	import { PHeader }  from '../components/PHeader'
+	import { Grid } from '../components/grid'
 	export default{
+		name:'App-base',
 		data(){
 	    	return {
 	      		selected:'appMine'
 	    	}
 	  	},
 	  	components:{
-	  		XHeader
+	  		PHeader,
+	  		Grid
 	  	},
 	  	methods:{
 	    	changeTab(TabName){
@@ -37,6 +44,9 @@
 	    	},
 	    	init(){
 	      		this.selected = this.$route.name
+	    	},
+	    	onClickMore(){
+	    		console.log('more')
 	    	}
 	  	},
 
@@ -50,6 +60,9 @@
 	  			if(this.$route.path){
 	  				return this.$route.meta.name
 	  			}
+	  		},
+	  		rightOptions (){
+	  			return { showMore:true }
 	  		}
 	  	},
 	  	mounted(){

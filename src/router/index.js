@@ -7,7 +7,7 @@ const AppBase = resolve => require(['../demos/AppBase'],resolve)
 const AppIndex = resolve => require(['../demos/AppIndex'],resolve)
 const AppMine = resolve => require(['../demos/AppMine'],resolve)
 
-const Grid = resolve => require(['../demos/Grid'],resolve)
+const AppGrid = resolve => require(['../demos/AppGrid'],resolve)
 
 var routerMaps = [
   {name:'AppBase',path:'/appbase',component:AppBase,children:[
