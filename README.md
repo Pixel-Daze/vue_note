@@ -36,5 +36,5 @@ import '../static/lib/icon-font/iconfont.css'
 
 ### TODO
 
-- [ ] header's title transition
+- [X] header's title transition
 - [ ] main container overflow-y

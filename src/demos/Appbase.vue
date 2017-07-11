@@ -1,9 +1,10 @@
 <template>
 	<div class="app-base text-primary">
-		<p-header 
+		<p-header v-show="title"
 		:title="title" 
 		transition="pixel-header-fade-in-left"
 		:right-options="rightOptions"
+		:left-options="leftOptions"
 		@on-click-more="onClickMore">
 			<!-- <a slot="right">更多</a> -->
 		</p-header>
@@ -39,7 +40,6 @@
 	  	},
 	  	methods:{
 	    	changeTab(TabName){
-	      		this.selected = TabName
 	      		this.$router.push({name:TabName})
 	    	},
 	    	init(){
@@ -58,11 +58,21 @@
 	  		},
 	  		componentName (){
 	  			if(this.$route.path){
-	  				return this.$route.meta.name
+	  				// 检测路由控制tab
+	  				this.selected = this.$route.name
+	  				if(this.$route.meta.name!=''||this.$route.meta.name!=null){
+	  					return this.$route.meta.name
+	  				}else{
+	  					return false
+	  				}
+	  				
 	  			}
 	  		},
 	  		rightOptions (){
-	  			return { showMore:true }
+	  			return { showMore:false }
+	  		},
+	  		leftOptions(){
+	  			return { showBack:this.$route.path !== '/appbase/appindex' }	
 	  		}
 	  	},
 	  	mounted(){

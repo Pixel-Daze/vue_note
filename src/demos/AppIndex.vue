@@ -7,12 +7,10 @@
 	export default {
 		name:'AppIndex',
 		methods:{
-			init(){
-				console.log(this.$route)
-			}
+			
 		},
 		mounted(){
-			// this.init()
+			
 		}
 	}
 </script>

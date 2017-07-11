@@ -12,7 +12,7 @@ const AppGrid = resolve => require(['../demos/AppGrid'],resolve)
 var routerMaps = [
   {name:'AppBase',path:'/appbase',component:AppBase,children:[
       {name:'appIndex',path:'appindex',component:AppIndex,meta: { name:'Home' }},
-      {name:'appMine',path:'appmine',component:AppMine,meta: { name:'Mine' }}
+      {name:'appMine',path:'appmine',component:AppMine,meta: { name:'' }}
   ]},
 	{path: '*', redirect: '/appbase/appindex'}
 ]
