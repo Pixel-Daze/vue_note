@@ -19,4 +19,9 @@
 
 	}
 </script>
-<style lang='scss'></style>
+<style lang='scss'>
+	.app-mine{
+		/*height: 100%;*/
+		/*background: green;*/
+	}
+</style>

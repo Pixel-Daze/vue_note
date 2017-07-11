@@ -6,10 +6,9 @@
 		:right-options="rightOptions"
 		:left-options="leftOptions"
 		@on-click-more="onClickMore">
-			<!-- <a slot="right">更多</a> -->
 		</p-header>
 		<transition name="pixel-pop-out">
-			<router-view></router-view>	
+			<router-view class="router-view"></router-view>	
 		</transition>
 		
         <mt-tabbar v-model="selected" class="pixel-1px-t">
@@ -87,12 +86,16 @@
 		left: 0;
 		bottom: 0;
 		right: 0;
+		width: 10rem;
+		.router-view {
+		  width: 100%;
+		}
 		.pixel-pop-out-enter-active,
 		.pixel-pop-out-leave-active,
 		.pixel-pop-in-enter-active,
 		.pixel-pop-in-leave-active {
 		  will-change: transform;
-		  transition: all 500ms ease-in-out;
+		  transition: all 500ms ease;
 		  height: 100%;
 		  position: absolute;
 		  backface-visibility: hidden;
@@ -100,11 +103,11 @@
 		}
 		.pixel-pop-out-enter {
 		  opacity: 0;
-		  transform: translate3d(-10rem, 0, 0);
+		  transform: translate3d(-100%, 0, 0);
 		}
 		.pixel-pop-out-leave-active {
 		  opacity: 0;
-		  transform: translate3d(10rem, 0, 0);
+		  transform: translate3d(100%, 0, 0);
 		}
 		.pixel-pop-in-enter {
 		  opacity: 0;

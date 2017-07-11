@@ -37,4 +37,6 @@ import '../static/lib/icon-font/iconfont.css'
 ### TODO
 
 - [X] header's title transition
+- [X] router-view transiton
+- [ ] grid and grid-item component
 - [ ] main container overflow-y

@@ -1,17 +1,37 @@
 <template>
 	<div class="app-index">
-		appindex
+		<h3>Grid</h3>
+		<grid :rows="3" v-for="i in 2">
+			<grid-item class="grid-center" v-for="i in 3">
+				{{i}}dsajjfds
+			</grid-item>
+		</grid>
 	</div>
 </template>
 <script>
+	import {Grid,GridItem} from '../components/grid'
 	export default {
 		name:'AppIndex',
 		methods:{
 			
 		},
+		components:{
+			Grid,
+			GridItem
+		},
 		mounted(){
-			
+
 		}
 	}
 </script>
-<style lang='scss'></style>
+<style lang='scss'>
+.app-index{
+	/*background: #d6d6d6;*/
+}
+h3{
+	/*background: #c00;*/
+}
+	.grid-center{
+		text-align: center;
+	}
+</style>

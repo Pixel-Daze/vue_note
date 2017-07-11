@@ -10,3 +10,22 @@
 		@include setLeftLine($pixelGridBorderColor);
 	}
 }
+.pixel-grids+.pixel-grids{
+	&::before{
+		@include setNoneLine($pixelGridBorderColor);
+	}
+}
+
+.pixel-grid-item{
+	position: relative;
+	float: left;
+	padding: 20px 0;
+	width: 100% / $pixelGridColumnCount;
+	box-sizing:border-box;
+	&::before{
+		@include setRightLine($pixelGridBorderColor);
+	}
+	&::after{
+		@include setBottomLine($pixelGridBorderColor);
+	}
+}

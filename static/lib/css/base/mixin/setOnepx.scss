@@ -62,3 +62,15 @@ $c:$border-color;
 	@include prefix(transform-origin,0 0);
 	@include prefix(transform,scale(.5));
 }
+
+@mixin setNoneLine($color:$c) {
+	content: " ";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 0;
+	border-right: 0 solid $c;
+	@include prefix(transform,scaleX(.5));
+	@include prefix(transform-origin,100% 0);
+}
