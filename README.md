@@ -16,7 +16,7 @@ FastClick.attach(document.body)
 
 ```
 import '../static/lib/js/flexible_css.js'
-```http://time.qq.com/?pgv_ref=aiotime
+```
 
 *mint-ui*
 >移动端基础UI库（可自行替换如vux）
