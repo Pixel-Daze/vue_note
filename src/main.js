@@ -27,6 +27,9 @@ import '../static/lib/css/pixel-1px.scss'
 import ExtendPlugin from './plugins/vue.ext.js'
 Vue.use(ExtendPlugin)
 
+/* AjaxPlugin */
+import AjaxPlugin from './plugins/ajax'
+Vue.use(AjaxPlugin)
 
 Vue.config.productionTip = false
 

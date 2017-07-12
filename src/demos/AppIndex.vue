@@ -10,17 +10,20 @@
 </template>
 <script>
 	import {Grid,GridItem} from '../components/grid'
+	import * as baseApi from '../api/baseApi'
 	export default {
 		name:'AppIndex',
 		methods:{
-			
+			loadInfo(){
+				baseApi.getIndexData()
+			}
 		},
 		components:{
 			Grid,
 			GridItem
 		},
 		mounted(){
-
+			this.loadInfo()
 		}
 	}
 </script>
