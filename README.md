@@ -34,6 +34,19 @@ Vue.use(Mint)
 import '../static/lib/icon-font/iconfont.css'
 ```
 
+*axios*
+>ajax
+```
+import axios form 'axios'
+```
+
+*AlloyLever*
+>移动端调试面板，在开发环境开启，配合vue-router使用
+```
+require('alloylever')
+import { alloyDebug } from './service/alloyDebugService'
+```
+
 ### TODO
 
 - [X] header's title transition

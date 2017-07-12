@@ -31,6 +31,18 @@ Vue.use(ExtendPlugin)
 import AjaxPlugin from './plugins/ajax'
 Vue.use(AjaxPlugin)
 
+/* dev-alloylever */
+import { alloyDebug } from './service/alloyDebugService'
+
+router.beforeEach((to,from,next)=>{
+    try{
+        MessageBox.close()
+    }catch(e){
+
+    }
+    alloyDebug(to,next)
+})
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
