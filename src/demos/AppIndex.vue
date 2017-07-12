@@ -15,7 +15,11 @@
 		name:'AppIndex',
 		methods:{
 			loadInfo(){
-				baseApi.getIndexData()
+				baseApi.getIndexData().then((resp)=>{
+					if(resp.data.result==0){
+						console.log(_.chunk(resp.data.data,3))
+					}
+				})
 			}
 		},
 		components:{

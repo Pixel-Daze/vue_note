@@ -31,6 +31,10 @@ Vue.use(ExtendPlugin)
 import AjaxPlugin from './plugins/ajax'
 Vue.use(AjaxPlugin)
 
+/* lodashPlugin */
+import _ from './plugins/lodash'
+Vue.use(_)
+
 /* dev-alloylever */
 import { alloyDebug } from './service/alloyDebugService'
 

@@ -16,7 +16,7 @@ FastClick.attach(document.body)
 
 ```
 import '../static/lib/js/flexible_css.js'
-```
+```http://time.qq.com/?pgv_ref=aiotime
 
 *mint-ui*
 >移动端基础UI库（可自行替换如vux）
@@ -45,6 +45,21 @@ import axios form 'axios'
 ```
 require('alloylever')
 import { alloyDebug } from './service/alloyDebugService'
+```
+
+*lodash*
+>操作各种类型的数据结构
+```
+import _ from 'lodash'
+
+export default {
+	install(Vue){
+		Object.defineProperty(Vue.prototype,'_',{value:_})
+	}
+}
+
+import _ from './plugins/lodash'
+Vue.use(_)
 ```
 
 ### TODO
