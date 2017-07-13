@@ -68,3 +68,6 @@ Vue.use(_)
 - [X] router-view transiton
 - [ ] grid and grid-item component
 - [ ] main container overflow-y
+- [ ] 支付条形码以及二维码页面
+- [ ] 支付付款页
+- [ ] 支付密码页

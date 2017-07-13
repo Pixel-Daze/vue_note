@@ -11,7 +11,7 @@
 			<router-view class="router-view"></router-view>	
 		</transition>
 		
-        <mt-tabbar v-model="selected" class="pixel-1px-t">
+        <mt-tabbar v-model="selected" class="pixel-1px-t" v-show="$route.name=='appIndex'||$route.name=='appMine'">
           	<mt-tab-item id="appIndex"  @click.native="changeTab('appIndex')">
             	<i slot="icon" class="icon iconfont icon-shouye"></i>
             	首页

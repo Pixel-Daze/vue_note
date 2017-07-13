@@ -9,11 +9,15 @@ const AppMine = resolve => require(['../demos/AppMine'],resolve)
 
 const AppGrid = resolve => require(['../demos/AppGrid'],resolve)
 
+const PaymentCode = resolve => require(['../demos/pay/PaymentCode'],resolve)
+
 var routerMaps = [
   {name:'AppBase',path:'/appbase',component:AppBase,children:[
       {name:'appIndex',path:'appindex',component:AppIndex,meta: { name:'Home' }},
-      {name:'appMine',path:'appmine',component:AppMine,meta: { name:'' }}
+      {name:'appMine',path:'appmine',component:AppMine,meta: { name:'' }},
+      {name:'PaymentCode',path:'/paymentCode',component:PaymentCode,meta:{name:'我要付款'}},
   ]},
+  
 	{path: '*', redirect: '/appbase/appindex'}
 ]
 

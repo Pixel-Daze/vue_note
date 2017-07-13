@@ -44,7 +44,8 @@ router.beforeEach((to,from,next)=>{
     }catch(e){
 
     }
-    alloyDebug(to,next)
+    // alloyDebug(to,next)
+    next()
 })
 
 Vue.config.productionTip = false
