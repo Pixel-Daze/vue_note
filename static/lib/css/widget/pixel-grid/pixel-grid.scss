@@ -28,4 +28,13 @@
 	&::after{
 		@include setBottomLine($pixelGridBorderColor);
 	}
+	&:active{
+		background-color: $BgColorActive;
+	}
+}
+
+.pixel-gird__icon{
+	width: $pixelGridIconSize;
+	height: $pixelGridIconSize;
+	margin: 0 auto;
 }
