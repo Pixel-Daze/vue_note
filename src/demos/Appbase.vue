@@ -89,6 +89,7 @@
 		width: 10rem;
 		.router-view {
 		  width: 100%;
+		  top: 45px;
 		}
 		.pixel-pop-out-enter-active,
 		.pixel-pop-out-leave-active,

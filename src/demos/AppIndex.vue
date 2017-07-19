@@ -41,12 +41,17 @@
 </script>
 <style lang='scss'>
 .app-index{
-	/*background: #d6d6d6;*/
-}
-h3{
-	/*background: #c00;*/
-}
-	.grid-center{
-		text-align: center;
+	height: calc(100% - 101px);
+	width: 100%;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+	::-webkit-scrollbar {
+		width: 0;
+		display: none;
 	}
+	::-webkit-scrollbar-button:horizontal:decrement:hover {
+		display: none;
+		width: 0;
+	}
+}
 </style>

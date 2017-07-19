@@ -45,12 +45,12 @@
 	}
 }
 
-.pixle-grid__label{
+.pixel-grid__label{
 	text-align: center;
 	display: block;
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	overflow: hidden;
 	color: $text-black-color;
-	font-size: $pixelGridIconSize;
+	font-size: $pixelGridFontSize;
 }
