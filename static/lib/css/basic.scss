@@ -29,6 +29,9 @@
 		.mint-tab-item{
 			color: $text-gray-color;
 		    padding: 6px 0;
+		    &:active{
+				background-color: $BgColorActive;
+			}
 		}
 		.mint-tab-item.is-selected{
 		    color: $text-red-color;
