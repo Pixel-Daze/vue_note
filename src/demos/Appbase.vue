@@ -13,11 +13,11 @@
 		
         <mt-tabbar v-model="selected" class="pixel-1px-t" v-show="$route.name=='appIndex'||$route.name=='appMine'">
           	<mt-tab-item id="appIndex"  @click.native="changeTab('appIndex')">
-            	<i slot="icon" class="icon iconfont icon-shouye"></i>
+            	<i slot="icon" class="icon iconfont icon-home"></i>
             	首页
           	</mt-tab-item>
           	<mt-tab-item id="appMine"  @click.native="changeTab('appMine')">
-            	<i slot="icon" class="icon iconfont icon-shouye1"></i>
+            	<i slot="icon" class="icon iconfont icon-mine"></i>
             	我的
           	</mt-tab-item>
         </mt-tabbar>

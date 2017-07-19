@@ -2,6 +2,6 @@
 	"result": 0,
 	"msg": "",
 	"data":[
-      {"name":"paymentCode","path":"/paymentCode"}
+      {"name":"二维码付款","path":"/paymentCode","icon":"icon iconfont icon-interrogation"}
     ]	
 }

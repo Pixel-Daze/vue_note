@@ -37,4 +37,20 @@
 	width: $pixelGridIconSize;
 	height: $pixelGridIconSize;
 	margin: 0 auto;
+	span{
+		font-size: $pixelGridIconSize/1.1;
+	}
+	& + .pixel-grid__label{
+		margin-top: 5px;
+	}
+}
+
+.pixle-grid__label{
+	text-align: center;
+	display: block;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	color: $text-black-color;
+	font-size: $pixelGridIconSize;
 }

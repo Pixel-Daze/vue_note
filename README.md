@@ -66,7 +66,7 @@ Vue.use(_)
 
 - [X] header's title transition
 - [X] router-view transiton
-- [ ] grid and grid-item component
+- [X] grid and grid-item component
 - [ ] main container overflow-y
 - [ ] 支付条形码以及二维码页面
 - [ ] 支付付款页
