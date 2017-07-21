@@ -7,8 +7,6 @@ const AppBase = resolve => require(['../demos/AppBase'],resolve)
 const AppIndex = resolve => require(['../demos/AppIndex'],resolve)
 const AppMine = resolve => require(['../demos/AppMine'],resolve)
 
-const AppGrid = resolve => require(['../demos/AppGrid'],resolve)
-
 const PaymentCode = resolve => require(['../demos/pay/PaymentCode'],resolve)
 
 var routerMaps = [
