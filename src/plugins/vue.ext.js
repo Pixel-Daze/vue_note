@@ -31,5 +31,13 @@ export default {
                 return null;
             }
         }
+
+        /* RSA加密 */
+        Vue.prototype.encryptData = (data, publicKey) =>{
+            var encrypt = new JSEncrypt()
+            encrypt.setPublicKey(publicKey)
+            console.log(encrypt.encrypt(data))
+            return encrypt.encrypt(data)
+        }
 	}
 }
