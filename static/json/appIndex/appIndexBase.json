@@ -4,7 +4,7 @@
 	"data":[
       {"name":"二维码付款","path":"/paymentCode","icon":"icon iconfont icon-interrogation"},
       {"name":"移动端付款","path":"/keyBoard","icon":"icon iconfont icon-interrogation"},
-      {"name":"二维码付款","path":"/paymentCode","icon":"icon iconfont icon-interrogation"},
+      {"name":"随机选项卡","path":"/randomCard","icon":"icon iconfont icon-interrogation"},
       {"name":"二维码付款","path":"/paymentCode","icon":"icon iconfont icon-interrogation"},
       {"name":"二维码付款","path":"/paymentCode","icon":"icon iconfont icon-interrogation"},
       {"name":"二维码付款","path":"/paymentCode","icon":"icon iconfont icon-interrogation"},

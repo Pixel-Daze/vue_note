@@ -28,7 +28,7 @@ export default {
   },
   methods: {
     pasEnd(val) {
-      let vm = this,pubkey = 'MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDK09kzKbf5aod64DqpYoJGKfNvObYRgCTPVcCqrcqNoG+gnAKRKiw4jMf56aywXpNxrP5gxBu3p1SpV4Fq1ax//iZJe9LkJ/+3PNUqDz9zgB+W0vHlNITDk5OyQy+MKcP/SP0Z6TOO+TQ4M9ojHFSFUfXbyAqYLC/52TT6N+xMwwIDAQAB'
+      let vm = this,pubkey = 'MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCEv1jT690ajmRwoqS0Uq1/SvtMl032rHpyp59uuQeUnYxJyULOTF7/3htjD7PiLbY5HrFxsLA8ZTGqwhebWC+TTwNdSNUO75AjRghVOd7vmODjYP4JZNkJXbSFSlIpAEz4DVOHoF6p/MjMmxf/hRdN8ZwRxWOpC7AkLbe69xbyyQIDAQAB'
       val = vm.encryptData(val,pubkey);  //得到密码 可能会进行一些加密动作
       setTimeout(() => { // 模拟请求接口验证密码中 .. 
         if (val === '111111') {

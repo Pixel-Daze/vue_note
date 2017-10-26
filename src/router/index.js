@@ -10,12 +10,16 @@ const AppMine = resolve => require(['../demos/AppMine'],resolve)
 const PaymentCode = resolve => require(['../demos/pay/PaymentCode'],resolve)
 const KeyBoard = resolve => require(['../demos/pay/KeyBoard'],resolve)
 
+/*play系列*/
+const RandomCard = resolve => require(['../demos/play/RandomCard'],resolve)
+
 var routerMaps = [
   {name:'AppBase',path:'/appbase',component:AppBase,children:[
       {name:'appIndex',path:'appindex',component:AppIndex,meta: { name:'Home' }},
       {name:'appMine',path:'appmine',component:AppMine,meta: { name:'' }},
       {name:'PaymentCode',path:'/paymentCode',component:PaymentCode,meta:{name:'我要付款'}},
-      {name:'KeyBoard',path:'/keyBoard',component:KeyBoard,meta:{name:'移动端付款'}}
+      {name:'KeyBoard',path:'/keyBoard',component:KeyBoard,meta:{name:'移动端付款'}},
+      {name:'RandomCard',path:'/randomCard',component:RandomCard,meta:{name:'随机选项卡'}}
   ]},
   
 	{path: '*', redirect: '/appbase/appindex'}
