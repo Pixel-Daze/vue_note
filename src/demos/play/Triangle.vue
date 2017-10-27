@@ -44,7 +44,6 @@
 	$tri-border:$border-width solid transparent;
 	.triangle{
 		height: calc(100% - 46px);
-	    overflow-y: scroll;
 		padding: 0.4rem;
 		text-align: center;
 		h3,p{

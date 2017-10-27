@@ -89,6 +89,8 @@
 		width: 10rem;
 		.router-view {
 		  width: 100%;
+		  overflow-y: scroll;
+		  -webkit-overflow-scrolling: touch;
 		}
 		.pixel-pop-out-enter-active,
 		.pixel-pop-out-leave-active,

@@ -41,9 +41,6 @@
 <style lang='scss'>
 .app-index{
 	height: calc(100% - 101px);
-	width: 100%;
-	overflow-y: scroll;
-	-webkit-overflow-scrolling: touch;
 	::-webkit-scrollbar {
 		width: 0;
 		display: none;

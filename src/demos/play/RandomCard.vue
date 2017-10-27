@@ -40,8 +40,6 @@
 <style lang='scss'>
 	.random-cards{
 		height: calc(100% - 46px);
-		width: 100%;
-	    overflow-y: scroll;
 	    overflow-x: hidden;
 		.cell{
 			display: inline-block;
