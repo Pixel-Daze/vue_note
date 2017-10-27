@@ -39,7 +39,7 @@ const scrollBehavior = (to, from, savedPosition) => {
 }
 
 const router = new Router({
-	mode:routerMode,
+	// mode:routerMode,
 	scrollBehavior,
 	routes:routerMaps
 })
