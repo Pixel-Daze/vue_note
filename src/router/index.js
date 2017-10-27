@@ -12,6 +12,7 @@ const KeyBoard = resolve => require(['../demos/pay/KeyBoard'],resolve)
 
 /*play系列*/
 const RandomCard = resolve => require(['../demos/play/RandomCard'],resolve)
+const Triangle = resolve => require(['../demos/play/Triangle'],resolve)
 
 var routerMaps = [
   {name:'AppBase',path:'/appbase',component:AppBase,children:[
@@ -19,7 +20,8 @@ var routerMaps = [
       {name:'appMine',path:'appmine',component:AppMine,meta: { name:'' }},
       {name:'PaymentCode',path:'/paymentCode',component:PaymentCode,meta:{name:'我要付款'}},
       {name:'KeyBoard',path:'/keyBoard',component:KeyBoard,meta:{name:'移动端付款'}},
-      {name:'RandomCard',path:'/randomCard',component:RandomCard,meta:{name:'随机选项卡'}}
+      {name:'RandomCard',path:'/randomCard',component:RandomCard,meta:{name:'随机选项卡'}},
+      {name:'Triangle',path:'/triangle',component:Triangle,meta:{name:'三角形探究'}}
   ]},
   
 	{path: '*', redirect: '/appbase/appindex'}

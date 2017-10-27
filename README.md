@@ -73,6 +73,7 @@ Vue.use(_)
 - [X] 支付密码页
 
 ### 玩具页面
->一些css和jsdemo,偏向简单图形化,愉悦信息
+>一些css和jsdemo,偏向简单图形化,愉悦心情
 
-- randomCards 随机选项卡
+- [X] randomCards 随机选项卡
+- [X] triangle 三角形探究
