@@ -1,0 +1,56 @@
+@import '../../base/fn';
+
+.pixel-grids{
+	position: relative;
+	overflow: hidden;
+	&::before{
+		@include setTopLine($pixelGridBorderColor);
+	}
+	&::after{
+		@include setLeftLine($pixelGridBorderColor);
+	}
+}
+.pixel-grids+.pixel-grids{
+	&::before{
+		@include setNoneLine($pixelGridBorderColor);
+	}
+}
+
+.pixel-grid-item{
+	position: relative;
+	float: left;
+	padding: 20px 0;
+	width: 100% / $pixelGridColumnCount;
+	box-sizing:border-box;
+	&::before{
+		@include setRightLine($pixelGridBorderColor);
+	}
+	&::after{
+		@include setBottomLine($pixelGridBorderColor);
+	}
+	&:active{
+		background-color: $BgColorActive;
+	}
+}
+
+.pixel-gird__icon{
+	width: $pixelGridIconSize;
+	height: $pixelGridIconSize;
+	margin: 0 auto;
+	span{
+		font-size: $pixelGridIconSize/1.1;
+	}
+	& + .pixel-grid__label{
+		margin-top: 5px;
+	}
+}
+
+.pixel-grid__label{
+	text-align: center;
+	display: block;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	color: $text-black-color;
+	font-size: $pixelGridFontSize;
+}

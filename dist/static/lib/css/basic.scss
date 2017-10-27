@@ -1,0 +1,44 @@
+@import './base/mixin/baseMixin';
+@import './base/variable/base-color';
+@import './base/reset.css';
+
+*{
+	@include prefix(box-sizing,border-box)
+	&::before{
+		@include prefix(box-sizing,border-box)
+	}
+	&::after{
+		@include prefix(box-sizing,border-box)
+	}
+}
+
+.text-red{
+	color: $text-red-color;
+}
+
+/* mint fix */
+
+.app-base{
+	.mint-tabbar{
+		position: absolute;
+		bottom: 0;
+		background-color: #fff;
+		.iconfont{
+			font-size: 25px;
+		}
+		.mint-tab-item{
+			color: $text-gray-color;
+		    padding: 6px 0;
+		    &:active{
+				background-color: $BgColorActive;
+			}
+		}
+		.mint-tab-item.is-selected{
+		    color: $text-red-color;
+		    background-color: #fff;
+		}
+		.mint-tab-item-label{
+			font-size: 14px;
+		}
+	}
+}
