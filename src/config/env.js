@@ -10,7 +10,7 @@ let routerMode = 'history'
 if(process.env.NODE_ENV == 'development'){
 	baseUrl = '../'
 }else if(process.env.NODE_ENV == 'production'){
-	baseUrl = 'https://pixel-daze.github.io/lodash_test/'
+	baseUrl = 'https://pixel-daze.github.io/vue_note/'
 }
 
 export {
