@@ -87,6 +87,7 @@
 		bottom: 0;
 		right: 0;
 		width: 10rem;
+		margin: 0 auto;
 		.router-view {
 		  width: 100%;
 		  overflow-y: scroll;
