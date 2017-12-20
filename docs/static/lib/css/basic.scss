@@ -1,7 +1,7 @@
 @import './base/mixin/baseMixin';
 @import './base/variable/base-color';
 @import './base/reset.css';
-
+@import './util/util.scss';
 *{
 	@include prefix(box-sizing,border-box)
 	&::before{

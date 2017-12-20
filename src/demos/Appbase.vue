@@ -90,7 +90,7 @@
 		margin: 0 auto;
 		.router-view {
 		  width: 100%;
-		  overflow-y: scroll;
+		  overflow-y: auto;
 		  -webkit-overflow-scrolling: touch;
 		}
 		.pixel-pop-out-enter-active,

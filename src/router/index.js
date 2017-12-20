@@ -9,6 +9,10 @@ const AppMine = resolve => require(['../demos/AppMine'],resolve)
 
 const PaymentCode = resolve => require(['../demos/pay/PaymentCode'],resolve)
 const KeyBoard = resolve => require(['../demos/pay/KeyBoard'],resolve)
+const KeyboardNum = resolve => require(['../demos/pay/KeyboardNum'],resolve)
+
+/* @desc:特殊用途上 */
+const FilterBar = resolve => require(['../demos/entity/FilterBar'],resolve)
 
 /*play系列*/
 const RandomCard = resolve => require(['../demos/play/RandomCard'],resolve)
@@ -21,7 +25,9 @@ var routerMaps = [
       {name:'PaymentCode',path:'/paymentCode',component:PaymentCode,meta:{name:'我要付款'}},
       {name:'KeyBoard',path:'/keyBoard',component:KeyBoard,meta:{name:'移动端付款'}},
       {name:'RandomCard',path:'/randomCard',component:RandomCard,meta:{name:'随机选项卡'}},
-      {name:'Triangle',path:'/triangle',component:Triangle,meta:{name:'三角形探究'}}
+      {name:'Triangle',path:'/triangle',component:Triangle,meta:{name:'三角形探究'}},
+      {name:'KeyboardNum',path:'/keyboardNum',component:KeyboardNum,meta:{name:'纯数字键盘'}},
+      {name:'FilterBar',path:'/filterBar',component:FilterBar,meta:{name:'条件筛选条'}}
   ]},
   
 	{path: '*', redirect: '/appbase/appindex'}
