@@ -7,6 +7,8 @@
       {"name":"随机选项卡","path":"/randomCard","icon":"icon iconfont icon-set"},
       {"name":"三角形探究","path":"/triangle","icon":"icon iconfont icon-store"},
       {"name":"纯数字键盘","path":"/keyboardNum","icon":"icon iconfont icon-safeguard"},
-      {"name":"条件筛选条","path":"/filterBar","icon":"icon iconfont icon-sports"}
+      {"name":"条件筛选条","path":"/filterBar","icon":"icon iconfont icon-sports"},
+      {"name":"svg动画","path":"/svgFir","icon":"icon iconfont icon-mall"},
+      {"name":"font","path":"/font","icon":"icon iconfont icon-flower"}
     ]	
 }
