@@ -17,6 +17,8 @@ const FilterBar = resolve => require(['../demos/entity/FilterBar'],resolve)
 /*play系列*/
 const RandomCard = resolve => require(['../demos/play/RandomCard'],resolve)
 const Triangle = resolve => require(['../demos/play/Triangle'],resolve)
+const SvgFir = resolve => require(['../demos/play/SvgFir'],resolve)
+const Font = resolve => require(['../demos/play/Font'],resolve)
 
 var routerMaps = [
   {name:'AppBase',path:'/appbase',component:AppBase,children:[
@@ -27,7 +29,9 @@ var routerMaps = [
       {name:'RandomCard',path:'/randomCard',component:RandomCard,meta:{name:'随机选项卡'}},
       {name:'Triangle',path:'/triangle',component:Triangle,meta:{name:'三角形探究'}},
       {name:'KeyboardNum',path:'/keyboardNum',component:KeyboardNum,meta:{name:'纯数字键盘'}},
-      {name:'FilterBar',path:'/filterBar',component:FilterBar,meta:{name:'条件筛选条'}}
+      {name:'FilterBar',path:'/filterBar',component:FilterBar,meta:{name:'条件筛选条'}},
+      {name:'SvgFir',path:'/svgFir',component:SvgFir,meta:{name:'svg动画'}},
+      {name:'Font',path:'/font',component:Font,meta:{name:'Font'}}
   ]},
   
 	{path: '*', redirect: '/appbase/appindex'}
