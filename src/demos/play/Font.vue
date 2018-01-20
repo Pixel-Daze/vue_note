@@ -35,7 +35,9 @@
 	.font{
 		height: calc(100% - 46px);
 		.grid-center .pixel-grid__label{
-			font: bold 32px 'Ruthie';
+			font-family: "Ruthie", cursive;
+			font-weight: bold;
+			font-size: 32px;
 		}
 		.pixel-grids::before{border: none;}
 		.pixel-grid-item{
