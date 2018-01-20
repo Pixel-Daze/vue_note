@@ -37,6 +37,7 @@
 		.grid-center .pixel-grid__label{
 			font: bold 32px 'Ruthie';
 		}
+		.pixel-grids::before{border: none;}
 		.pixel-grid-item{
 			&::before,&::after{
 				border:none;

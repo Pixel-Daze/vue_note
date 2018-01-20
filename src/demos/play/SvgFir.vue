@@ -2,7 +2,7 @@
 <template>	
 	<div class="svg-fir">
 		<div class="svg-container">
-			<svg xmlns="http://www.w3.org/2000/svg" class="svg1" width="100%" height="100%">
+			<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
 				<line class="top" x1="0" y1="0" x2="450" y2="0" />
 				<line class="right" x1="150" y1="0" x2="150" y2="690" />
 				<line class="bottom" x1="150" y1="230" x2="-300" y2="230" />
@@ -81,14 +81,14 @@
 					stroke-width:2;
 					stroke:#fff;
 					fill:none;
-					transition:transform .7s ease-out;
+					transition:transform 1s ease-out;
 					transition-delay: 0.1s;
 				}
 				line.top,line.bottom{
-					stroke-dasharray:150;
+					stroke-dasharray:150,150;
 				}
 				line.right,line.left{
-					stroke-dasharray:230;
+					stroke-dasharray:230,230;
 				}
 			}
 		}
