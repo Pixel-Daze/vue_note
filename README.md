@@ -77,3 +77,6 @@ Vue.use(_)
 
 - [X] randomCards 随机选项卡
 - [X] triangle 三角形探究
+- [X] Svg svg动画
+- [X] Font 映入外部字体
+- [X] css渐变 探索线性渐变和径向渐变

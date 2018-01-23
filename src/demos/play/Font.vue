@@ -36,7 +36,6 @@
 		height: calc(100% - 46px);
 		.grid-center .pixel-grid__label span{
 			font-family: "Ruthie", cursive;
-			// font-weight: bold;
 			font-size: 32px;
 		}
 		.pixel-grids::before{border: none;}
