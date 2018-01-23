@@ -10,6 +10,7 @@
       {"name":"条件筛选条","path":"/filterBar","icon":"icon iconfont icon-sports"},
       {"name":"svg动画","path":"/svgFir","icon":"icon iconfont icon-mall"},
       {"name":"font","path":"/font","icon":"icon iconfont icon-flower"},
-      {"name":"渐变","path":"/gradient","icon":"icon iconfont icon-camrea"}
+      {"name":"渐变","path":"/gradient","icon":"icon iconfont icon-camrea"},
+      {"name":"图层投影","path":"/boxShadow","icon":"icon iconfont icon-enquire"}
     ]	
 }

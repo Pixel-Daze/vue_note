@@ -20,6 +20,7 @@ const Triangle = resolve => require(['../demos/play/Triangle'],resolve)
 const SvgFir = resolve => require(['../demos/play/SvgFir'],resolve)
 const Font = resolve => require(['../demos/play/Font'],resolve)
 const Gradient = resolve => require(['../demos/play/Gradient'],resolve)
+const BoxShadow = resolve => require(['../demos/play/BoxShadow'],resolve)
 
 var routerMaps = [
   {name:'AppBase',path:'/appbase',component:AppBase,children:[
@@ -33,7 +34,8 @@ var routerMaps = [
       {name:'FilterBar',path:'/filterBar',component:FilterBar,meta:{name:'条件筛选条'}},
       {name:'SvgFir',path:'/svgFir',component:SvgFir,meta:{name:'svg动画'}},
       {name:'Font',path:'/font',component:Font,meta:{name:'Font'}},
-      {name:'Gradient',path:'/gradient',component:Gradient,meta:{name:'渐变'}}
+      {name:'Gradient',path:'/gradient',component:Gradient,meta:{name:'渐变'}},
+      {name:'BoxShadow',path:'/boxShadow',component:BoxShadow,meta:{name:'图层投影'}}
   ]},
   
 	{path: '*', redirect: '/appbase/appindex'}
