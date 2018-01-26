@@ -21,6 +21,7 @@ const SvgFir = resolve => require(['../demos/play/SvgFir'],resolve)
 const Font = resolve => require(['../demos/play/Font'],resolve)
 const Gradient = resolve => require(['../demos/play/Gradient'],resolve)
 const BoxShadow = resolve => require(['../demos/play/BoxShadow'],resolve)
+const Animation = resolve => require(['../demos/play/Animation'],resolve)
 
 var routerMaps = [
   {name:'AppBase',path:'/appbase',component:AppBase,children:[
@@ -35,7 +36,8 @@ var routerMaps = [
       {name:'SvgFir',path:'/svgFir',component:SvgFir,meta:{name:'svg动画'}},
       {name:'Font',path:'/font',component:Font,meta:{name:'Font'}},
       {name:'Gradient',path:'/gradient',component:Gradient,meta:{name:'渐变'}},
-      {name:'BoxShadow',path:'/boxShadow',component:BoxShadow,meta:{name:'图层投影'}}
+      {name:'BoxShadow',path:'/boxShadow',component:BoxShadow,meta:{name:'图层投影'}},
+      {name:'Animation',path:'/animation',component:Animation,meta:{name:'css动画'}}
   ]},
   
 	{path: '*', redirect: '/appbase/appindex'}
