@@ -81,3 +81,5 @@ Vue.use(_)
 - [X] Font 映入外部字体
 - [X] css渐变 探索线性渐变和径向渐变
 - [X] 图层投影
+- [X] css animation
+- [X] 制作省略号

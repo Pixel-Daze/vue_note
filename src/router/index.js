@@ -22,6 +22,7 @@ const Font = resolve => require(['../demos/play/Font'],resolve)
 const Gradient = resolve => require(['../demos/play/Gradient'],resolve)
 const BoxShadow = resolve => require(['../demos/play/BoxShadow'],resolve)
 const Animation = resolve => require(['../demos/play/Animation'],resolve)
+const WordWrap = resolve => require(['../demos/play/WordWrap'],resolve)
 
 var routerMaps = [
   {name:'AppBase',path:'/appbase',component:AppBase,children:[
@@ -37,7 +38,8 @@ var routerMaps = [
       {name:'Font',path:'/font',component:Font,meta:{name:'Font'}},
       {name:'Gradient',path:'/gradient',component:Gradient,meta:{name:'渐变'}},
       {name:'BoxShadow',path:'/boxShadow',component:BoxShadow,meta:{name:'图层投影'}},
-      {name:'Animation',path:'/animation',component:Animation,meta:{name:'css动画'}}
+      {name:'Animation',path:'/animation',component:Animation,meta:{name:'css动画'}},
+      {name:'WordWrap',path:'/wordWrap',component:WordWrap,meta:{name:'word-wrap'}}
   ]},
   
 	{path: '*', redirect: '/appbase/appindex'}
