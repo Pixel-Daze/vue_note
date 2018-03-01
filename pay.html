@@ -157,22 +157,25 @@
 		
 		.right .ensure.able{background-color: #35c89c;}
 		.right .ensure.able:active{background-color:rgba(53,200,156,.8);}
-		.pixel-pop-out-enter-active,
-		.pixel-pop-out-leave-active{
-		  will-change: transform;
-		  transition: all 500ms ease;
-		  height: 100%;
-		  position: absolute;
-		  backface-visibility: hidden;
-		  perspective: 1000;
+		@-webkit-keyframes twinkling {
+			/*透明度由0到1*/
+			0% {
+				opacity: 0;
+				/*透明度为0*/
+			}
+			100% {
+				opacity: 1;
+				/*透明度为1*/
+			}
 		}
-		.pixel-pop-out-enter {
-		  opacity: 0;
-		  transform: translate3d(-100%, 0, 0);
-		}
-		.pixel-pop-out-leave-active {
-		  opacity: 0;
-		  transform: translate3d(100%, 0, 0);
+
+		.gb {
+			-webkit-animation: twinkling 1s infinite ease-in-out;
+			background-color: black;
+			width: 2px;
+			display: inline-block;
+			height: 26px;
+			vertical-align: bottom;
 		}
 	</style>
 </head>
@@ -191,7 +194,7 @@
 		<div class="input-wrap">
 			<div class="input-area pixel-1px">
 				<span>支付金额</span>
-				<span class="money" v-cloak>{{money|fixMoney}}</span>
+				<span class="money" v-cloak>{{money}}<span class='gb'></span>&nbsp;元</span></span>
 			</div>
 		</div>
 		<div class="logo-wrap">
@@ -225,14 +228,14 @@
 </body>
 <script src="https://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
 <script src="https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js"></script>
-<script src="https://wechatfe.github.io/vconsole/lib/vconsole.min.js?v=3.0.0.0"></script>
+<!-- <script src="https://wechatfe.github.io/vconsole/lib/vconsole.min.js?v=3.0.0.0"></script> -->
 <script>
 	if ('addEventListener' in document) {
 		document.addEventListener('DOMContentLoaded', function() {
 			FastClick.attach(document.body);
 		}, false);
 	}
-	var vConsole = new VConsole();
+	// var vConsole = new VConsole();
 </script>
 <script type="text/javascript">
 	var app = new Vue({
@@ -262,7 +265,7 @@
 					this.used = false;
 					this.money = this.resData();
 					console.log('可支付'+this.money);
-					location.href = 'https://wx.cq.abchina.com/sht/test/api' + '/t/r?amount=' + this.money + '&tNote='
+					// location.href = 'https://wx.cq.abchina.com/sht/test/api' + '/t/r?amount=' + this.money + '&tNote='
 				}
 			},
 			/* @desc:处理支付数据 */
@@ -310,11 +313,6 @@
 				if(vm.money!=''&&vm.money.split('.').length==1){
 					vm.money += val;
 				}
-			}
-		},
-		filters:{
-			fixMoney:function(val){
-				return val+'  元';
 			}
 		},
 		computed:{

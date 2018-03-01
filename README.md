@@ -70,7 +70,7 @@ Vue.use(_)
 - [X] main container overflow-y
 - [ ] 支付条形码以及二维码页面
 - [ ] 支付付款页
-- [X] 支付密码页
+- [X] 移动端付款
 
 ### 玩具页面
 >一些css和jsdemo,偏向简单图形化,愉悦心情
