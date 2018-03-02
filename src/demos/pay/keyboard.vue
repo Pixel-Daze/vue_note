@@ -1,5 +1,5 @@
 <template>
-  <div class="pay-page">
+  <div class="pay-page" ref="payPage">
 		<header>
 			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEwAAABLCAMAAADtTJGhAAAA4VBMVEUAAAA1yJ01yJ01yJ01yJ01yJ01yJ01yJ01yJ01yJ01yJ01yJ01yJ01yJ01yJ01yJ01yJ01yJ01yJ01yJ01yJ01yJ01yJ01yJ01yJ01yJ01yJ01yJ01yJ01yJ01yJ01yJ01yJ01yJ01yJ01yJ01yJ01yJ01yJ01yJ01yJ01yJ3///9b0q/z/PlNz6lCy6Pa9e3B7uHK8eb7/v1u2LlW0a5GzaU5yqDl+PPE7+Oi5tKe5dCE3sOs6deS4srY9Oy87d+269yn59V+3ME+y6Ls+vbQ8umM4Mh32r1i1bRQ0Kvb9e4vHNx/AAAAKXRSTlMABM54/fnXZFLv21kJ8ujkxivgrGsOpaCYik0jILCNcl5JPje1koEUhJ/ZaY8AAAKqSURBVFjDxdhpV+IwFAbg27JWNhFU3PeZeQNVEFGUXRxH5///oDmcIiEX2waSc+b5xAfO26TNchOKdJRN7G+nSx680tb2fiJ7RBvaze0VwRX3cru0LueiksL3UieHzlpR52lE2co42lGZHcTZ0Ywrb0OHe6XRrIMk9CRv8hTt2IU+N3qkHHpYRyFL4c6SWFOCwvzA+g5CshKAtbQMJNOeHiaxoRxxxx42VSjzsepic2k2ek+x5LYlYty3plhSo2VXygsbiHjvWHYZ3smeiPeqdtQJHRWPk+FdtOEzVFX6ki/BVHHxDaowd0YBZwuqWx2PbOmdv7ULgL1/HR9QzVejClQtoaMP1XWwP7I9zRdaGqyfqZ+zsBxUA6HnD1SZWVgNqjuhpwlVZRbGvuWD0HTfgcKbrT1QvQhd71CVV1/Zk9A1hOqc6BcUH0LfAxSnRHtQ9IU+NttPiFhl0RD63tgGv/Ix75eGZexPtnIQsY3kt/z0k6UOyZ8T+bgWmwNEqbBZPpYj7mn6tHjE54itthIRVI9fTXvz5ZBroy3mXuA3Fg1jHCrwxawbNGb23YPeNWaz8LUxzwLqQTO7U16wEZXAtfvdcS9YE+rP3dEgmDadwaj58hC0vjfu9tvgPKI0bNmR48ycS7QPW06+q8o+m81mB1E6i3+wuZkFVxdC+IjiL/7BVo1ja2FludIah3lyDzAPq8jdyTwsI/dNozC5b1LFSti1rDXMw7KyCjIMk1UQVS2EncnK0SCMV46UWQlr16O0V8KqvNper9rwWbUddg74K+LdsXNA6AnFbzXitJSG1Syendy89VOd/fOm6dEiYfOMbv32wP69BpctmNy4cGUX+tJlipa/0e5qLU+xLl29Zl1au9krVR2Ld44Wb0P/2z0tv0EuoFDUuUH+B2TdyYoKy3dAAAAAAElFTkSuQmCC" >
 			<div class="shop-info">
@@ -133,13 +133,17 @@ export default {
 					return false;
 				}
 			}
-		}
+		},
+    mounted(){
+      // 此处需设置高度，否则会有位移动画出现
+      this.$refs.payPage.style.height='calc(100% - 46px)'
+    }
 }
 </script>
 
 <style lang="scss">
 		.pay-page{
-			height: calc(100% - 46px);background-color: #edf8f0;
+			background-color: #edf8f0;
       header{
         width: 100%;
         display: flex;
