@@ -2,7 +2,9 @@ import { fetch,postData } from '../service/httpService'
 
 /* @desc:get Index data */
 export function getIndexData(){
-	return fetch('./static/json/appIndex/appIndexBase.json')
+	// separate development mode and production mode
+	let req = `./static/json/appIndex/${process.env.NODE_ENV == 'development'?'dev':'prod'}.json`
+	return fetch(req)
 }
 
 /* @desc:get filter-bar data */

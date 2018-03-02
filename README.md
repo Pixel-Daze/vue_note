@@ -62,12 +62,15 @@ import _ from './plugins/lodash'
 Vue.use(_)
 ```
 
-### TODO
+### 基础组件
 
 - [X] header's title transition
 - [X] router-view transiton
 - [X] grid and grid-item component
 - [X] main container overflow-y
+
+### 常用页面
+
 - [X] 扫码支付页面
 - [X] 移动端付款(一般做成单独的页面，不适合放在整体项目中)
 
@@ -82,3 +85,7 @@ Vue.use(_)
 - [X] 图层投影
 - [X] css animation
 - [X] 制作省略号
+
+### 特殊组件
+- [ ] 数字转中文大写
+- [ ] 下拉筛选
