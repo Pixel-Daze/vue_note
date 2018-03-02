@@ -1,4 +1,4 @@
-# vue_note
+# 前端tip集合
 
 > 主体是移动端vue项目，内容包括vue移动端必要的库、vue项目基础架构、移动端ui库非通用组件实现、基础前端知识，[在线预览地址](https://pixel-daze.github.io/vue_note/#/appbase/appindex)
 
@@ -68,9 +68,8 @@ Vue.use(_)
 - [X] router-view transiton
 - [X] grid and grid-item component
 - [X] main container overflow-y
-- [ ] 支付条形码以及二维码页面
-- [ ] 支付付款页
-- [X] 移动端付款
+- [X] 扫码支付页面
+- [X] 移动端付款(一般做成单独的页面，不适合放在整体项目中)
 
 ### 玩具页面
 >一些css和jsdemo,偏向简单图形化,愉悦心情
