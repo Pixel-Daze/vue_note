@@ -13,7 +13,7 @@
 		<div class="input-wrap">
 			<div class="input-area pixel-1px">
 				<span>支付金额</span>
-				<span class="money" v-cloak>{{money}}<span class='gb'></span>&nbsp;元</span></span>
+				<span class="money">{{money}}<span class='gb'></span>&nbsp;元</span></span>
 			</div>
 		</div>
 		<div class="logo-wrap">
@@ -142,25 +142,28 @@ export default {
 </script>
 
 <style lang="scss">
-		.pay-page{
-			background-color: #edf8f0;
-      header{
+.pay-page{
+	background-color: #edf8f0;
+    header{
         width: 100%;
         display: flex;
         padding-top: 46px;
         justify-content: center;
-      }
-      .logo-wrap{
+		>img{
+			width: 42px;height: 42px;margin: 2px 5px 2px 0;
+		}
+    }
+    .logo-wrap{
         position: absolute;
         width: 100%;
         bottom: 232px;
         padding-bottom: 20px;
         text-align: center;
-      }
-      .logo-wrap>img{
-        width: 49%;
-      }
-      .num-board{
+		>img{
+        	width: 49%;
+    	}
+    }
+    .num-board{
         width: 100%;
         height: 232px;
         display: flex;
@@ -168,13 +171,8 @@ export default {
         bottom: 0;
         left: 0;
         background-color: #fff;
-      }
-		}
-		[v-cloak] { display: none }
-		
-		header>img{
-			width: 42px;height: 42px;margin: 2px 5px 2px 0;
-		}
+    }
+}
 		header .shop-info{margin-left: 5px;display: flex;
 			flex-direction: column;}
 		header .title{font-size: 16px;color: #333;padding-bottom: 5px;flex: 1;}
