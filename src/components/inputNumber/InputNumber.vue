@@ -45,7 +45,7 @@
 	}
 </script>
 <style lang='scss'>
-	@import '../../../static/lib/css/pixel-1px.scss'
+	@import '../../../static/lib/css/pixel-1px.scss';
 	.input-number{
 		height: 1.066667rem;
 		display:table;  
