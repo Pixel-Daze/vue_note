@@ -1,6 +1,6 @@
 <template>
 	<div class="font" ref="font">
-		<grid :rows="3" v-for="menuItem in letter">
+		<grid :rows="3" v-for="(menuItem,index) in letter" :key="index">
 			<grid-item class="grid-center" v-for="item in menuItem" :key="item" :label="item">
 			</grid-item>
 		</grid>

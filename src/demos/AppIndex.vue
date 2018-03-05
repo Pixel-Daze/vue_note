@@ -1,6 +1,6 @@
 <template>
 	<div class="app-index">
-		<grid :rows="3" v-for="menuItem in menu">
+		<grid :rows="3" v-for="(menuItem,index) in menu" :key="index">
 			<grid-item class="grid-center" v-for="item in menuItem" :key="item.name" @click.native="goPath(item.path)"  :label="item.name">
 				<span slot="icon" :class="item.icon"></span>
 			</grid-item>

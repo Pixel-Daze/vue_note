@@ -109,12 +109,11 @@
 	.num-board{
 		width: 100%;
 		display: flex;
-		position: absolute;
-		bottom: -232px;
-		left: 0;
+		position: fixed;
+    	bottom: 0;
 		background-color: #f6f6f8;
 		transition: all .3s ease;
-		// input{display: none}
+		transform: translateY(232px);
 		.left{
 			flex: 3;
 			.btn-cell{
@@ -164,6 +163,6 @@
 		}
 	}
 	.active{
-		bottom: 0;
+		transform: translateY(0);
 	}
 </style>
