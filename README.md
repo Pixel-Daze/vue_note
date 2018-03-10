@@ -1,6 +1,6 @@
 # 前端tip集合
 
-> 主体是移动端vue项目，内容包括vue移动端必要的库、vue项目基础架构、移动端ui库非通用组件实现、基础前端知识，[在线预览地址](https://pixel-daze.github.io/vue_note/#/appbase/appindex)
+> 主体是移动端vue项目，内容包括vue移动端必要的库、vue项目基础架构、移动端ui库非通用组件实现、基础前端知识，[在线预览地址](https://pixel-daze.github.io/vue_note)
 
 ### 技术栈
 *FastClick*
