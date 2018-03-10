@@ -1,0 +1,58 @@
+.num-board{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    background-color: #f6f6f8;
+    transition: all .3s ease;
+    transform: translateY(232px);
+    .left{
+        flex: 3;
+        .btn-cell{
+            width: 33.33%;
+            height: 58px;
+            float: left;
+            font-size: 24px;
+            padding: 15px 0;
+            text-align: center;
+            &:active{
+                background-color:#ececec;
+            };
+        }
+        .icon-num-end{
+            font-size: 28px;
+        }
+    }
+    .right{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        >div{
+            flex: 1;
+        }
+        .delete,.ensure{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .delete{
+            .icon-delete1{
+                font-size: 26px;
+            }
+            &:active{
+                background-color:#ececec;
+            }
+        }
+        .ensure{
+            font-size: 18px;
+            color: #fcfcfc;
+            background-color: #2b91e3;
+            &:active{
+                background-color:rgba(43,145,227,.8);
+            }
+        }
+    }
+}
+.active{
+    transform: translateY(0);
+}

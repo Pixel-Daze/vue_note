@@ -10,6 +10,7 @@ const AppMine = resolve => require(['../demos/AppMine'],resolve)
 const PaymentCode = resolve => require(['../demos/pay/PaymentCode'],resolve)
 const KeyBoard = resolve => require(['../demos/pay/KeyBoard'],resolve)
 const KeyboardNum = resolve => require(['../demos/pay/KeyboardNum'],resolve)
+const PixelBoardNum = resolve => require(['../demos/pay/PixelBoardNum'],resolve)
 
 /* @desc:特殊用途上 */
 const FilterBar = resolve => require(['../demos/entity/FilterBar'],resolve)
@@ -32,7 +33,8 @@ var routerMaps = [
       {name:'KeyBoard',path:'/keyBoard',component:KeyBoard,meta:{name:'移动端付款'}},
       {name:'RandomCard',path:'/randomCard',component:RandomCard,meta:{name:'随机选项卡'}},
       {name:'Triangle',path:'/triangle',component:Triangle,meta:{name:'三角形探究'}},
-      {name:'KeyboardNum',path:'/keyboardNum',component:KeyboardNum,meta:{name:'纯数字键盘'}},
+      {name:'KeyboardNum',path:'/keyboardNum',component:KeyboardNum,meta:{name:'数字键盘'}},
+      {name:'PixelBoardNum',path:'/pixelBoardNum',component:PixelBoardNum,meta:{name:'数字键盘'}},
       {name:'FilterBar',path:'/filterBar',component:FilterBar,meta:{name:'条件筛选条'}},
       {name:'SvgFir',path:'/svgFir',component:SvgFir,meta:{name:'svg动画'}},
       {name:'Font',path:'/font',component:Font,meta:{name:'Font'}},

@@ -3,12 +3,12 @@
 @import './base/reset.css';
 @import './util/util.scss';
 *{
-	@include prefix(box-sizing,border-box)
+	@include prefix(box-sizing,border-box);
 	&::before{
-		@include prefix(box-sizing,border-box)
+		@include prefix(box-sizing,border-box);
 	}
 	&::after{
-		@include prefix(box-sizing,border-box)
+		@include prefix(box-sizing,border-box);
 	}
 }
 

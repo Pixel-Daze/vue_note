@@ -1,6 +1,6 @@
 <!-- 基础支付数字键盘组件 -->
 <template>
-	<div ref="numBoard" class="num-board" :class="{active:localActive}">
+	<div ref="numBoard" class="num-board" :class="{active:active}">
 		<div class="left">
 			<span class="btn-cell pixel-1px-t pixel-1px-r" @click="inputNum(1)">1</span>
 			<span class="btn-cell pixel-1px-t pixel-1px-r" @click="inputNum(2)">2</span>
@@ -26,32 +26,32 @@
 <script>
 	/**
 	* num-board
-	* @desc 数字键盘 适用于Vue2.3.0+
-	* @param {Boolean} [active] - 弹出控制，双向绑定
+	* @desc 数字键盘 适用于Vue2.0+
+	* @param {Boolean} [active] - 弹出控制
 	* @param {String} [value] - 输入的数字，双向绑定
+	* @param {RegExp} [rule] - 输入数字的正则限制
 	*
 	* @example
-	* <num-board :active.sync=active :value.sync="money"></num-board>
+	* <pixel-board :active=active v-model="money" :rule=rule @hide="active = false"></pixel-board>
 	*/
 	export default {
 		name:'num-board',
 		data(){
 			return {
-				localActive:false,
 				localNum:'',
 				Regex:{
-					money:/^((\d{0,5})|(\d{0,7}\.\d{0,1}))$/
+					rule:/^((\d{0,5})|(\d{0,7}\.\d{0,1}))$/
 				}
 			}
 		},
 		props:{
 			active:{type:Boolean,default:false},
-			value:{type:String}
+			value:{type:String},
+			rule:{type:RegExp}
 		},
 		methods:{
 			closeBoard(){
-				this.localActive = false
-				this.$emit('update:active', this.localActive)	
+				this.$emit('hide', false)	
 			},
 			/* @desc:正则验证 */
 			checkReg:function(info,reg){
@@ -74,10 +74,10 @@
 					vm.dotReg(val)
 				}else if(vm.localNum=='0'){
 					vm.localNum = val;
-				}else if(vm.localNum==''||(vm.localNum!=''&&vm.checkReg(vm.localNum,vm.Regex.money))){
+				}else if(vm.localNum==''||(vm.localNum!=''&&vm.checkReg(vm.localNum,vm.Regex.rule))){
 					vm.localNum += val;
 				}
-				this.$emit('update:value', vm.localNum)	
+				this.$emit('input', vm.localNum)	
 			},
 			/* @desc:键盘规则1 */
 			dotReg:function(val){
@@ -90,18 +90,16 @@
 			delLast:function(){
 				if(this.localNum.length>0){
 					this.localNum = this.localNum.substring(0,this.localNum.length-1);
-					this.$emit('update:value', this.localNum)	
+					this.$emit('input', this.localNum)	
 				}
 			},
 		},
-		watch:{
-			active:function(newVal,oldVal){
-				this.localActive = newVal
-			}
-		},
 		mounted(){
 			this.localNum = this.value
-			this.localActive = this.active
+			if(this.rule){
+				this.Regex.rule = this.rule
+			}
+			
 		}
 	}
 </script>

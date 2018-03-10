@@ -13,7 +13,7 @@
 		<div class="input-wrap">
 			<div class="input-area pixel-1px">
 				<span>支付金额</span>
-				<span class="money">{{money}}<span class='gb'></span>&nbsp;元</span></span>
+				<span class="money">{{money}}<span class='gb'></span>&nbsp;元</span>
 			</div>
 		</div>
 		<div class="logo-wrap">
@@ -142,76 +142,9 @@ export default {
 </script>
 
 <style lang="scss">
+@import './keyboard';
 .pay-page{
-	background-color: #edf8f0;
-	header{
-		width: 100%;
-		display: flex;
-		padding-top: 46px;
-		justify-content: center;
-		>img{
-			width: 42px;height: 42px;margin: 2px 5px 2px 0;
-		}
-		.shop-info{margin-left: 5px;display: flex;flex-direction: column;}
-		.title{font-size: 16px;color: #333;padding-bottom: 5px;flex: 1;}
-		.intro{
-			font-size: 12px;
-			color: #aaa;
-			flex: 1;
-			.icon{
-				background-color: #cad7ce;
-				padding: 2px;
-				font-size: 9px;
-				border-radius: 3px;
-				color: #fff;
-			}
-		}
-	}
-	.logo-wrap{
-		position: absolute;
-		width: 100%;
-		bottom: 232px;
-		padding-bottom: 20px;
-		text-align: center;
-		>img{
-			width: 49%;
-		}
-	}
-	.input-wrap{
-		width: 100%;
-		padding: 40px 15px 0;
-		.input-area{
-			width: 100%;
-			padding: 20px;
-			font-size: 20px;
-			background-color: #fff;
-			border-radius: 3px;
-			display: flex;
-			justify-content: space-between;
-			.money{font-family:Arial;}
-			&::after{border-radius: 7px;}
-		}
-		@-webkit-keyframes twinkling {
-				/*透明度由0到1*/
-				0% {
-					opacity: 0;
-					/*透明度为0*/
-				}
-				100% {
-					opacity: 1;
-					/*透明度为1*/
-				}
-			}
-
-			.gb {
-				-webkit-animation: twinkling 1s infinite ease-in-out;
-				background-color: black;
-				width: 2px;
-				display: inline-block;
-				height: 26px;
-				vertical-align: bottom;
-			}
-		}
+	@include board-wrap;
 		.num-board-h{
 			width: 100%;
 			height: 232px;
@@ -261,5 +194,5 @@ export default {
 			.right .ensure.able{background-color: #35c89c;}
 			.right .ensure.able:active{background-color:rgba(53,200,156,.8);}
 		}
-	}
+}
 </style>
