@@ -81,7 +81,7 @@ function moneyConvert(val){
     return chineseStr;
 }
 
-class Money{
+export class Money{
     constructor(price){
         if(typeof price==='number'){
             this._price = price;
@@ -111,5 +111,5 @@ class Money{
     }
 }
 
-let money = new Money(150000001.00);
-console.log(money.toCn())
+// let money = new Money(150000001.00);
+// console.log(money.toCn())
