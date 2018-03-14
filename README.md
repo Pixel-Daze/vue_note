@@ -62,12 +62,15 @@ import _ from './plugins/lodash'
 Vue.use(_)
 ```
 
-### 基础组件
+### 基础架构
 
 - [X] header's title transition
 - [X] router-view transiton
-- [X] grid and grid-item component
 - [X] main container overflow-y
+
+### 常用组件
+- [X] grid and grid-item component
+- [ ] popup
 
 ### 常用页面
 

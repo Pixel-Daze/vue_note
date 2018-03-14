@@ -18,13 +18,13 @@
 			<a>http://www.w3cplus.com_css_css3_word_wrap</a>
 		</div>
 		<h2>word-break</h2>
-		<div class="eg">我是大漠，我在测试我在测试我在测试我在测试我在测试我在测试，我是大漠，我在测试我在测试</div>
+		<div class="eg">我在测试我在测试我在测试我在测试我在测试我在测试，我在测试我在测试</div>
 		<div class="eg">没有带word-break测试中英文混排</div>
 		<div class="eg">没有带word-break测试中英文混排thisiswithdadfathisiswithdadfa</div>
 		<div class="eg break"><strong>带word-break</strong>测试中英文混排thisiswithdadfathisiswithdadfa</div>
 		<h2>溢出省略号</h2>
-		<div class="eg overflow">我是大漠，我在测试我在测试我在测试我在测试我在测试我在测试，我是大漠，我在测试我在测试</div>
-		<div class="eg overflow-3">我是大漠，我在测试我在测试我在测试我在测试我在测试我在测试，我是大漠，我在测试我在测试</div>
+		<div class="eg overflow">我在测试我在测试我在测试我在测试我在测试我在测试，我在测试我在测试</div>
+		<div class="eg overflow-3">我在测试我在测试我在测试我在测试我在测试我在测试，我在测试我在测试</div>
 	</div>
 </template>
 <script>

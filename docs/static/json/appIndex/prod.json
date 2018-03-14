@@ -12,7 +12,6 @@
       {"name":"font","path":"/font","icon":"icon iconfont icon-flower"},
       {"name":"渐变","path":"/gradient","icon":"icon iconfont icon-camrea"},
       {"name":"图层投影","path":"/boxShadow","icon":"icon iconfont icon-enquire"},
-      {"name":"css动画","path":"/animation","icon":"icon iconfont icon-case"},
       {"name":"省略号","path":"/wordWrap","icon":"icon iconfont icon-remind"}
     ]	
 }

@@ -7,10 +7,14 @@ const AppBase = resolve => require(['../demos/AppBase'],resolve)
 const AppIndex = resolve => require(['../demos/AppIndex'],resolve)
 const AppMine = resolve => require(['../demos/AppMine'],resolve)
 
+/* @desc:支付相关 */
 const PaymentCode = resolve => require(['../demos/pay/PaymentCode'],resolve)
 const KeyBoard = resolve => require(['../demos/pay/KeyBoard'],resolve)
 const KeyboardNum = resolve => require(['../demos/pay/KeyboardNum'],resolve)
 const PixelBoardNum = resolve => require(['../demos/pay/PixelBoardNum'],resolve)
+
+/* @desc:常用组件 */
+const Popup = resolve => require(['../demos/entity/Popup'],resolve)
 
 /* @desc:特殊用途上 */
 const FilterBar = resolve => require(['../demos/entity/FilterBar'],resolve)
@@ -41,7 +45,8 @@ var routerMaps = [
       {name:'Gradient',path:'/gradient',component:Gradient,meta:{name:'渐变'}},
       {name:'BoxShadow',path:'/boxShadow',component:BoxShadow,meta:{name:'图层投影'}},
       {name:'Animation',path:'/animation',component:Animation,meta:{name:'css动画'}},
-      {name:'WordWrap',path:'/wordWrap',component:WordWrap,meta:{name:'word-wrap'}}
+      {name:'WordWrap',path:'/wordWrap',component:WordWrap,meta:{name:'word-wrap'}},
+      {name:'Popup',path:'/popup',component:Popup,meta:{name:'popup'}}
   ]},
   
 	{path: '*', redirect: '/appbase/appindex'}

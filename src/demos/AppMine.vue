@@ -1,6 +1,5 @@
 <template>
-	<div class="app-mine">
-	appmine</div>
+	<div class="app-mine"></div>
 </template>
 <script>
 	export default {
@@ -29,6 +28,7 @@
 						n.push(item)
 					}
 				})
+				console.log(n.sort(function(x,y){return x-y}))
 				let end = new Date()
 				console.log(end-start)
 				return n
