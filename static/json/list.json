@@ -1,0 +1,36 @@
+{
+    "code": 0,
+    "msg": "",
+    "data": [
+        {
+            "id": 0,
+            "name": "通识",
+            "color": "#86c5fa"
+        },
+        {
+            "id": 1,
+            "name": "生物",
+            "color": "#98faae"
+        },
+        {
+            "id": 2,
+            "name": "辐射",
+            "color": "#fafa86"
+        },
+        {
+            "id": 3,
+            "name": "化学",
+            "color": "#bf6af6"
+        },
+        {
+            "id": 4,
+            "name": "机械",
+            "color": "#e96763"
+        },
+        {
+            "id": 5,
+            "name": "特种设备",
+            "color": "#f4a976"
+        }
+    ]
+}
